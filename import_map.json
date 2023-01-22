@@ -1,0 +1,10 @@
+{
+  "imports": {
+    "oak/": "https://deno.land/x/oak@v11.1.0/",
+    "deno_dom/": "https://deno.land/x/deno_dom@v0.1.36-alpha/",
+    "mysql/": "https://deno.land/x/mysql@v2.11.0/",
+    "std/": "https://deno.land/std@0.173.0/",
+    "redis/": "https://deno.land/x/redis@v0.29.0/",
+    "accepts/": "https://deno.land/x/accepts@2.1.1/"
+  }
+}

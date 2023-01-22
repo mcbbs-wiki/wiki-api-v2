@@ -1,0 +1,6 @@
+{
+  "tasks": {
+    "dev": "deno run --watch --allow-net main.ts --inspect"
+  },
+  "importMap": "import_map.json"
+}

@@ -14,7 +14,7 @@ import utilsRouter from "./routes/utils.ts";
 import { Accepts } from "accepts/mod.ts";
 
 const app = new Application();
-const port = 8080;
+const port = 18080;
 
 app.use(async (ctx: Context, next) => {
   ctx.response.headers.append('Access-Control-Allow-Origin', '*')

@@ -16,7 +16,7 @@ export default {
       }
       result=dbImg
       await cache.set(`bbswiki-meme-${id}`, JSON.stringify(result), {
-        ex: 86400000,
+        ex: 86400,
       });
     } else {
       result = cached;

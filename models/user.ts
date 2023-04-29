@@ -24,7 +24,7 @@ export async function getUser(uid: number): Promise<BBSUser | null> {
     }
     result = bbsuser;
     await cache.set(`bbswiki-user-${uid}`, JSON.stringify(result), {
-      ex: 10800000,
+      ex: 10800,
     });
   } else {
     result = cached;

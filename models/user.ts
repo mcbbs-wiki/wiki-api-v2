@@ -34,7 +34,11 @@ export async function getUser(uid: number): Promise<BBSUser | null> {
 
 async function getUserInfo(uid: number): Promise<BBSUser | null> {
   const doc = await fetchDocument(uid);
-  const profileHTML = doc.querySelector("#ct .u_profile")!.innerHTML;
+  const profileNode = doc.querySelector("#ct .u_profile");
+  if(!profileNode){
+    return null;
+  }
+  const profileHTML=profileNode.innerHTML;
   if (profileHTML) {
     if (doc?.querySelector(".messagetext")) {
       return null;

@@ -29,9 +29,11 @@ app.use(async (ctx, next) => {
       switch (err.status) {
         case Status.NotFound:
           ctx.response.body = { message: STATUS_TEXT[404] };
+          ctx.response.status=404;
           break;
         case Status.InternalServerError:
           ctx.response.body = { message: STATUS_TEXT[500] };
+          ctx.response.status=500;
           break;
         default:
       }
